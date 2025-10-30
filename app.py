@@ -66,6 +66,10 @@
       "C:\\Users\\ASUS\\AppData\\Local\\Temp\\ipykernel_12384\\2796242697.py:81: DeprecationWarning:\n",
       "\n",
       "*choropleth_mapbox* is deprecated! Use *choropleth_map* instead. Learn more at: https://plotly.com/python/mapbox-to-maplibre/\n",
+      "\n",
+      "C:\\Users\\ASUS\\AppData\\Local\\Temp\\ipykernel_12384\\2796242697.py:81: DeprecationWarning:\n",
+      "\n",
+      "*choropleth_mapbox* is deprecated! Use *choropleth_map* instead. Learn more at: https://plotly.com/python/mapbox-to-maplibre/\n",
       "\n"
      ]
     }
@@ -98,6 +102,8 @@
     "# CONFIGURAR DASH APP\n",
     "\n",
     "app = Dash(__name__)\n",
+    "server = app.server\n",
+    "\n",
     "app.title = \"Mapa Climático Interactivo\"\n",
     "\n",
     "app.layout = html.Div([\n",
