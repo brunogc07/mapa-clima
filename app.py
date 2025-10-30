@@ -11,7 +11,7 @@ gdf = gpd.read_file("MUNICIPIOS CON NOMBRE.kml", driver='KML')
 gdf = gdf[['Name', 'geometry']]
 
 # Cargar Excel
-df = pd.read_excel("CLIMA PRUEBAS 2001.xlsx")
+df = pd.read_csv("CLIMA PRUEBAS 2001.csv")
 
 # Unir GeoDataFrame con DataFrame
 gdf_merged = gdf.merge(df, left_on='Name', right_on='MUNICIPIO', how='left')
